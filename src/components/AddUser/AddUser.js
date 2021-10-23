@@ -17,8 +17,9 @@ const AddUser = () => {
         })
         .then(res => res.json())
         .then(data => {
+            console.log(data);
             if(data.insertedId){
-                alert("Successfully added user");
+                window.alert("Successfully added user")
             }
         }).finally(e.target.reset())
         e.preventDefault();
